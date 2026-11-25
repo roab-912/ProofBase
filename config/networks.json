@@ -1,0 +1,18 @@
+{
+  "sepolia": {
+    "layer": "L1",
+    "chainId": 11155111,
+    "rpcEnv": "SEPOLIA_RPC_URL",
+    "publicRpcUrl": "https://ethereum-sepolia-rpc.publicnode.com",
+    "confirmations": 2,
+    "finalityTag": "finalized"
+  },
+  "arbitrumSepolia": {
+    "layer": "L2",
+    "chainId": 421614,
+    "rpcEnv": "ARBITRUM_SEPOLIA_RPC_URL",
+    "publicRpcUrl": "https://sepolia-rollup.arbitrum.io/rpc",
+    "confirmations": 20,
+    "checkpointSourceTag": "safe"
+  }
+}

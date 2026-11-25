@@ -1,0 +1,9 @@
+{
+  "protocolId": "proofbase/1",
+  "encodingId": "proofbase-encoding/1",
+  "recordHashId": "poseidon-circomlib-bn254/1",
+  "batchTreeId": "poseidon-binary-depth20/1",
+  "anchorTreeId": "keccak256-binary-depth32/1",
+  "proofSystemId": "circom-groth16-bn254/1",
+  "encryptionSuiteId": "xchacha20poly1305-hkdfsha256/1"
+}

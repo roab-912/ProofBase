@@ -1,0 +1,29 @@
+{
+  "references": [
+    {
+      "path": "./apps/api"
+    },
+    {
+      "path": "./apps/web"
+    },
+    {
+      "path": "./apps/admin"
+    },
+    {
+      "path": "./apps/worker"
+    },
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/sdk"
+    },
+    {
+      "path": "./packages/prover"
+    },
+    {
+      "path": "./packages/verifier"
+    }
+  ],
+  "files": []
+}

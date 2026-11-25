@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+blockExoticSubdeps: true
+minimumReleaseAge: 1440
+saveExact: true
+engineStrict: true
+ignoreScripts: true
+pmOnFail: error
