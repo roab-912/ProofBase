@@ -27,3 +27,7 @@ export interface VaultPort<KeyHandle, UnlockInput> {
   wrap(key: KeyHandle, input: UnlockInput): Promise<Uint8Array>;
   lock(key: KeyHandle): Promise<void>;
 }
+export {
+  createCommitmentAdapter,
+  type ColumnsCommitmentPort,
+} from './commitment.js';

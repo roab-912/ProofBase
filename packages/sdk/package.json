@@ -11,5 +11,8 @@
   "scripts": {
     "build": "tsc -b",
     "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "circomlibjs": "0.1.7"
   }
 }

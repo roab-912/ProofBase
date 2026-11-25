@@ -24,6 +24,7 @@
     "check:phase0": "pnpm check && pnpm test:infra && pnpm test:chains && node tools/check-phase0.mjs"
   },
   "devDependencies": {
+    "circomlib": "2.0.5",
     "eslint": "10.15.0",
     "prettier": "3.10.1",
     "typescript": "7.0.2",
