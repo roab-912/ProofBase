@@ -1,0 +1,32 @@
+{
+  "name": "proofbase",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.23.0",
+  "engines": {
+    "node": "26.13.1",
+    "pnpm": "12.23.0"
+  },
+  "scripts": {
+    "lint": "prettier --check . && eslint . && node tools/check-boundaries.mjs",
+    "format": "prettier --write .",
+    "typecheck": "tsc -b --pretty false && tsc -p tests/types/tsconfig.json --pretty false",
+    "build": "tsc -b --pretty false",
+    "test": "node --test tests/*.test.mjs",
+    "test:zero-clear": "node --test tests/zero-clear.test.mjs",
+    "test:infra": "node tools/smoke-infra.mjs",
+    "test:chains": "node --env-file-if-exists=.env tools/smoke-testnets.mjs",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "dev:init": "node tools/init-dev.mjs",
+    "infra:up": "docker compose up -d --wait --wait-timeout 120",
+    "infra:down": "docker compose down",
+    "check:phase0": "pnpm check && pnpm test:infra && pnpm test:chains && node tools/check-phase0.mjs"
+  },
+  "devDependencies": {
+    "eslint": "10.15.0",
+    "prettier": "3.10.1",
+    "typescript": "7.0.2",
+    "yaml": "2.9.1"
+  }
+}

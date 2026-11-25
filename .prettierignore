@@ -1,0 +1,5 @@
+node_modules
+.local
+dist
+pnpm-lock.yaml
+ProofBase — Spécification produit et roadmap V1.0.md

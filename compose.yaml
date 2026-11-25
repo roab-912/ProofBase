@@ -1,0 +1,44 @@
+name: proofbase
+services:
+  postgres:
+    image: postgres:19.0-alpine@sha256:cac45fb483caee3668946088a1c0532db89d5285c28dbfeac889b4068296e06f
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-proofbase}
+      POSTGRES_DB: ${POSTGRES_DB:-proofbase}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run pnpm dev:init first}
+    ports:
+      - 127.0.0.1:5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    security_opt:
+      - no-new-privileges:true
+  redis:
+    image: redis:8.12.0-alpine@sha256:5af80107c1eeecb484a2269b80a26d12bfa6521787da4663bd9f19f60a163483
+    command:
+      - redis-server
+      - --appendonly
+      - yes
+    ports:
+      - 127.0.0.1:6379:6379
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  postgres-data: null
+  redis-data: null

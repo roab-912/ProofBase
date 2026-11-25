@@ -1,0 +1,15 @@
+{
+  "phase": 0,
+  "nextPhaseAllowed": false,
+  "specifications": {
+    "status": "reviewed",
+    "reviewer": "Codex",
+    "reviewedOn": "2026-11-24",
+    "sourceDigest": "3f308994c847329a950665ec3ab1fbc921e91091b332b086910654792015d800"
+  },
+  "remoteCi": {
+    "status": "pending",
+    "runUrl": null,
+    "commit": null
+  }
+}

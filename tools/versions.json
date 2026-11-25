@@ -1,0 +1,249 @@
+{
+  "checkedOn": "2026-11-24",
+  "node": {
+    "version": "26.13.1",
+    "source": "https://nodejs.org/dist/index.json"
+  },
+  "npm": [
+    {
+      "name": "pnpm",
+      "version": "12.23.0",
+      "source": "https://registry.npmjs.org/pnpm/latest",
+      "integrity": "sha512-AtqU/68TP0YHQyKv5VL5DUC19xriWa77zNrMUIWx1hfpjWXgEx9XSLm2dEWXjuUFXX1ZpHPx7vDVBIVP781ZdQ==",
+      "peers": null
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "source": "https://registry.npmjs.org/typescript/latest",
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+      "peers": null
+    },
+    {
+      "name": "prettier",
+      "version": "3.10.1",
+      "source": "https://registry.npmjs.org/prettier/latest",
+      "integrity": "sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg==",
+      "peers": null
+    },
+    {
+      "name": "eslint",
+      "version": "10.15.0",
+      "source": "https://registry.npmjs.org/eslint/latest",
+      "integrity": "sha512-+5Wg4p+ze3sG1WErYgUO/3H1IQIfFBymVUA0Fo/XTeBOLS6UQIUekpSJ8sdRkn7O7wjh84b55w/roqavH2aScg==",
+      "peers": {
+        "jiti": "*"
+      }
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.74.0",
+      "source": "https://registry.npmjs.org/typescript-eslint/latest",
+      "integrity": "sha512-OsWQlsedt1ZpZXfZZMNK3m4SoQONFFcy4h/uRznsCeRfVuEic3gh4KGUs2pJJ5o0Jj0Jr7keUHQGN1Ns9aDw7Q==",
+      "peers": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": "\u003e=4.8.4 \u003c6.1.0"
+      }
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.1",
+      "source": "https://registry.npmjs.org/yaml/latest",
+      "integrity": "sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==",
+      "peers": null
+    },
+    {
+      "name": "fastify",
+      "version": "5.12.8",
+      "source": "https://registry.npmjs.org/fastify/latest",
+      "integrity": "sha512-moP8exb2sCHLUbJkwp+I6C0padhy4D8lp0SdmzY7HhSdZuqm7O/u3o2aq7u8okaQ//33QDzj3G/u+FsSdB8Qzw==",
+      "peers": null
+    },
+    {
+      "name": "zod",
+      "version": "4.6.7",
+      "source": "https://registry.npmjs.org/zod/latest",
+      "integrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==",
+      "peers": null
+    },
+    {
+      "name": "drizzle-orm",
+      "version": "0.45.4",
+      "source": "https://registry.npmjs.org/drizzle-orm/latest",
+      "integrity": "sha512-NiM1YZpJ2UxyeE67DpDDZ+Tsw4YLX3trSlkNT7Tm9eKoUNb1LvaAaQzXgYQsWs+AQ9TUmmwMmBOCXuqqxUWKKQ==",
+      "peers": {
+        "pg": "\u003e=8",
+        "gel": "\u003e=2",
+        "knex": "*",
+        "kysely": "*",
+        "mysql2": "\u003e=2",
+        "sql.js": "\u003e=1",
+        "sqlite3": "\u003e=5",
+        "postgres": "\u003e=3",
+        "@types/pg": "*",
+        "bun-types": "*",
+        "@netlify/db": "\u003e=0.4.0",
+        "expo-sqlite": "\u003e=14.0.0",
+        "@types/sql.js": "*",
+        "@libsql/client": "\u003e=0.10.0",
+        "@prisma/client": "*",
+        "@upstash/redis": "\u003e=1.34.7",
+        "better-sqlite3": "\u003e=7",
+        "@xata.io/client": "*",
+        "@vercel/postgres": "\u003e=0.8.0",
+        "@opentelemetry/api": "^1.4.1",
+        "@libsql/client-wasm": "\u003e=0.10.0",
+        "@electric-sql/pglite": "\u003e=0.2.0",
+        "@planetscale/database": "\u003e=1.13",
+        "@tidbcloud/serverless": "*",
+        "@types/better-sqlite3": "*",
+        "@aws-sdk/client-rds-data": "\u003e=3",
+        "@neondatabase/serverless": "\u003e=0.10.0",
+        "@cloudflare/workers-types": "\u003e=4",
+        "@op-engineering/op-sqlite": "\u003e=2"
+      }
+    },
+    {
+      "name": "bullmq",
+      "version": "6.7.10",
+      "source": "https://registry.npmjs.org/bullmq/latest",
+      "integrity": "sha512-Gd+z7bqpO2WeTtol8q01OpIf2kWLrVJcpvJGYsB8c/GeLZgeW6ezyeg4DIs7u8+LTJt1y8XMI2BPmIXlgFe7xg==",
+      "peers": {
+        "pg": "\u003e=8.0.0",
+        "redis": "\u003e=5.0.0",
+        "ioredis": "\u003e=5.0.0",
+        "bullmq-otel": "\u003e=2.0.0"
+      }
+    },
+    {
+      "name": "viem",
+      "version": "2.58.6",
+      "source": "https://registry.npmjs.org/viem/latest",
+      "integrity": "sha512-dBxl7nsHrENzD3HR/wOeeH2NcfXSwoEibTSZKJR7kcQOyqIDa50O27H2JU2ZMAQqS1QrEojaYCy6dLWIsdb9cA==",
+      "peers": {
+        "mppx": "\u003e=0.17.0",
+        "typescript": "\u003e=5.0.4"
+      }
+    },
+    {
+      "name": "next",
+      "version": "16.4.6",
+      "source": "https://registry.npmjs.org/next/latest",
+      "integrity": "sha512-QZJiYhaZLJMo2KpkQGQIwvmd79WVsAWeYIU554a8d7zArS3si/IRy3lBNV/rtYhE70oLwdLYhPAXLPx8HwcwtA==",
+      "peers": {
+        "sass": "^1.3.0",
+        "react": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+        "react-dom": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+        "@playwright/test": "^1.51.1",
+        "@opentelemetry/api": "^1.1.0",
+        "babel-plugin-react-compiler": "*"
+      }
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "source": "https://registry.npmjs.org/react/latest",
+      "integrity": "sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==",
+      "peers": null
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.5",
+      "source": "https://registry.npmjs.org/tailwindcss/latest",
+      "integrity": "sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==",
+      "peers": null
+    },
+    {
+      "name": "libsodium-wrappers-sumo",
+      "version": "0.8.4",
+      "source": "https://registry.npmjs.org/libsodium-wrappers-sumo/latest",
+      "integrity": "sha512-ql7hcgulKZ3ekfa2DGAogcCKsWU0diA/0nArz1CFzh93WQdb46/Kj18ka/Hifq6uA3Ush34Pc6vU/6HXeRwUkg==",
+      "peers": null
+    },
+    {
+      "name": "circomlib",
+      "version": "2.0.5",
+      "source": "https://registry.npmjs.org/circomlib/latest",
+      "integrity": "sha512-O7NQ8OS+J4eshBuoy36z/TwQU0YHw8W3zxZcs4hVwpEll3e4hDm3mgkIPqItN8FDeLEKZFK3YeT/+k8TiLF3/A==",
+      "peers": null
+    },
+    {
+      "name": "circomlibjs",
+      "version": "0.1.7",
+      "source": "https://registry.npmjs.org/circomlibjs/latest",
+      "integrity": "sha512-GRAUoAlKAsiiTa+PA725G9RmEmJJRc8tRFxw/zKktUxlQISGznT4hH4ESvW8FNTsrGg/nNd06sGP/Wlx0LUHVg==",
+      "peers": null
+    },
+    {
+      "name": "snarkjs",
+      "version": "0.7.6",
+      "source": "https://registry.npmjs.org/snarkjs/latest",
+      "integrity": "sha512-4uH1xA5JzVU5jaaWS2fXej3+RC6L5Erhr6INTJtUA27du4Elbh4VXCeeRjB4QiwL6N6y7SNKePw5prTxyEf4Zg==",
+      "peers": null
+    }
+  ],
+  "github": [
+    {
+      "name": "iden3/circom",
+      "version": "v2.2.3",
+      "source": "https://github.com/iden3/circom/releases/tag/v2.2.3"
+    },
+    {
+      "name": "iden3/rapidsnark",
+      "version": "v0.0.8",
+      "source": "https://github.com/iden3/rapidsnark/releases/tag/v0.0.8"
+    },
+    {
+      "name": "ethereum/solidity",
+      "version": "v0.8.39",
+      "source": "https://github.com/argotorg/solidity/releases/tag/v0.8.39"
+    },
+    {
+      "name": "foundry-rs/foundry",
+      "version": "v1.10.0",
+      "source": "https://github.com/foundry-rs/foundry/releases/tag/v1.10.0"
+    },
+    {
+      "name": "redis/redis",
+      "version": "8.12.0",
+      "source": "https://github.com/redis/redis/releases/tag/8.12.0"
+    },
+    {
+      "name": "docker/compose",
+      "version": "v5.8.0",
+      "source": "https://github.com/docker/compose/releases/tag/v5.8.0"
+    }
+  ],
+  "actions": [
+    {
+      "name": "actions/checkout",
+      "version": "v7.0.1",
+      "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "source": "https://github.com/actions/checkout/releases/tag/v7.0.1"
+    },
+    {
+      "name": "actions/setup-node",
+      "version": "v7.1.0",
+      "sha": "949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "source": "https://github.com/actions/setup-node/releases/tag/v7.1.0"
+    },
+    {
+      "name": "pnpm/action-setup",
+      "version": "v6.1.1",
+      "sha": "73e46992e05b19abd31f2f3c20e0e7370d762115",
+      "source": "https://github.com/pnpm/action-setup/releases/tag/v6.1.1"
+    }
+  ],
+  "images": [
+    {
+      "name": "postgres:19.0-alpine",
+      "digest": "sha256:cac45fb483caee3668946088a1c0532db89d5285c28dbfeac889b4068296e06f",
+      "source": "https://hub.docker.com/v2/repositories/library/postgres/tags/19.0-alpine"
+    },
+    {
+      "name": "redis:8.12.0-alpine",
+      "digest": "sha256:5af80107c1eeecb484a2269b80a26d12bfa6521787da4663bd9f19f60a163483",
+      "source": "https://hub.docker.com/v2/repositories/library/redis/tags/8.12.0-alpine"
+    }
+  ]
+}
