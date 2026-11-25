@@ -9,6 +9,7 @@
     "pnpm": "12.23.0"
   },
   "scripts": {
+    "test:circuit": "node tools/test-threshold-circuit.mjs",
     "lint": "prettier --check . && eslint . && node tools/check-boundaries.mjs",
     "format": "prettier --write .",
     "typecheck": "tsc -b --pretty false && tsc -p tests/types/tsconfig.json --pretty false",
