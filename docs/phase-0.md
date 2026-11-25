@@ -51,4 +51,5 @@ Le rapport final de cette session précisera les commandes et résultats réels.
 - Revue technique des spécifications : encodages/AAD, frontières des clés,
   séparation des ports, couverture totale, profils versionnés et finalité
   cohérents. Audit crypto et tests des implémentations restent aux phases prévues.
-- État Docker et CI distante : à compléter après fin des vérifications.
+- Le 2026-11-25, PostgreSQL et Redis ont démarré avec Compose. Les contrôles
+  `SELECT 1` et `PING` ont réussi. La CI GitHub attend la publication de la branche.
