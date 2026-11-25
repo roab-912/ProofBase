@@ -24,3 +24,4 @@ export interface ProofSystem<Witness, CompiledCircuit, ProvingKey> {
     readonly signal?: AbortSignal;
   }): Promise<ProofEnvelope>;
 }
+export { prepareThresholdOpenings } from './threshold-openings.js';
