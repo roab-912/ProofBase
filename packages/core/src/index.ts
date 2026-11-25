@@ -15,3 +15,4 @@ export type {
   Hex,
   JsonValue,
 } from './ports.js';
+export { createBatchTree, type BatchLeaf } from './batch-tree.js';

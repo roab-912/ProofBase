@@ -31,3 +31,4 @@ export {
   createCommitmentAdapter,
   type ColumnsCommitmentPort,
 } from './commitment.js';
+export { createBatchHash } from './batch-hash.js';
