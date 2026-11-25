@@ -52,4 +52,5 @@ Le rapport final de cette session précisera les commandes et résultats réels.
   séparation des ports, couverture totale, profils versionnés et finalité
   cohérents. Audit crypto et tests des implémentations restent aux phases prévues.
 - Le 2026-11-25, PostgreSQL et Redis ont démarré avec Compose. Les contrôles
-  `SELECT 1` et `PING` ont réussi. La CI GitHub attend la publication de la branche.
+  `SELECT 1` et `PING` ont réussi. Les jobs `quality` et `integration` ont réussi
+  sur le commit `d65f63b` ([exécution GitHub Actions](https://github.com/roab-912/ProofBase/actions/runs/45574440378)).

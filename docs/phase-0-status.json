@@ -1,6 +1,6 @@
 {
   "phase": 0,
-  "nextPhaseAllowed": false,
+  "nextPhaseAllowed": true,
   "specifications": {
     "status": "reviewed",
     "reviewer": "Codex",
@@ -8,8 +8,8 @@
     "sourceDigest": "3f308994c847329a950665ec3ab1fbc921e91091b332b086910654792015d800"
   },
   "remoteCi": {
-    "status": "pending",
-    "runUrl": null,
-    "commit": null
+    "status": "passed",
+    "runUrl": "https://github.com/roab-912/ProofBase/actions/runs/45574440378",
+    "commit": "d65f63b31c2c3e738968390726617bb231322f59"
   }
 }
