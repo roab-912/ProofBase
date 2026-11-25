@@ -32,3 +32,10 @@ export {
   type ColumnsCommitmentPort,
 } from './commitment.js';
 export { createBatchHash } from './batch-hash.js';
+export {
+  createRecordEncryption,
+  deriveRecordKey,
+  recordAad,
+  type RecordContext,
+  type RecordKey,
+} from './record-encryption.js';
