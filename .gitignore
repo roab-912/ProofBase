@@ -16,3 +16,5 @@ contracts/cache/
 *.log
 *.pem
 *.key
+circuits/noir/target/
+circuits/noir/Prover.toml

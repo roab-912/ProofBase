@@ -1,0 +1,235 @@
+{
+  "native": {
+    "16": {
+      "size": 16,
+      "witnessMs": 203.39789999999994,
+      "results": [
+        {
+          "proveMs": 850,
+          "verifyMs": 203.21169999999984,
+          "peakKiB": 44624
+        },
+        {
+          "proveMs": 780,
+          "verifyMs": 206.89449999999988,
+          "peakKiB": 44596
+        },
+        {
+          "proveMs": 680,
+          "verifyMs": 196.2491,
+          "peakKiB": 44536
+        }
+      ]
+    },
+    "64": {
+      "size": 64,
+      "witnessMs": 420.3103000000001,
+      "results": [
+        {
+          "proveMs": 2290,
+          "verifyMs": 214.83050000000003,
+          "peakKiB": 148064
+        },
+        {
+          "proveMs": 2360,
+          "verifyMs": 200.76630000000023,
+          "peakKiB": 147900
+        },
+        {
+          "proveMs": 2280,
+          "verifyMs": 226.0708999999997,
+          "peakKiB": 148004
+        }
+      ]
+    },
+    "256": {
+      "size": 256,
+      "witnessMs": 5412.420599999998,
+      "results": [
+        {
+          "proveMs": 30570,
+          "verifyMs": 1135.1419999999998,
+          "peakKiB": 544804
+        },
+        {
+          "proveMs": 33090,
+          "verifyMs": 983.116399999999,
+          "peakKiB": 556668
+        },
+        {
+          "proveMs": 14430,
+          "verifyMs": 954.8842999999997,
+          "peakKiB": 556780
+        }
+      ]
+    }
+  },
+  "measurement": {
+    "16": {
+      "size": 16,
+      "witnessMs": 425.3878999999997,
+      "results": [
+        {
+          "proveMs": 9867.0475,
+          "verifyMs": 78.0043999999998,
+          "peakKiB": 485808
+        },
+        {
+          "proveMs": 6489.7463,
+          "verifyMs": 923.4831000000004,
+          "peakKiB": 502508
+        },
+        {
+          "proveMs": 7123.7597,
+          "verifyMs": 533.5981999999995,
+          "peakKiB": 492284
+        }
+      ]
+    },
+    "64": {
+      "size": 64,
+      "witnessMs": 492.8800000000001,
+      "results": [
+        {
+          "proveMs": 9423.0429,
+          "verifyMs": 12.102100000000064,
+          "peakKiB": 808348
+        },
+        {
+          "proveMs": 10241.3091,
+          "verifyMs": 14.19629999999961,
+          "peakKiB": 794588
+        },
+        {
+          "proveMs": 9818.2428,
+          "verifyMs": 11.960900000000038,
+          "peakKiB": 838112
+        }
+      ]
+    },
+    "256": {
+      "size": 256,
+      "witnessMs": 4342.624,
+      "results": [
+        {
+          "proveMs": 162997.52060000002,
+          "verifyMs": 86.39629999999306,
+          "peakKiB": 2098044
+        },
+        {
+          "proveMs": 301740.4877,
+          "verifyMs": 357.79409999999916,
+          "peakKiB": 2044748
+        },
+        {
+          "proveMs": 238325.1363,
+          "verifyMs": 72.06320000000414,
+          "peakKiB": 2070996
+        }
+      ]
+    }
+  },
+  "noir": {
+    "16": {
+      "size": 16,
+      "results": [
+        {
+          "proveMs": 4770,
+          "peakKiB": 172040,
+          "verifyMs": 1000
+        },
+        {
+          "proveMs": 4910,
+          "peakKiB": 171584,
+          "verifyMs": 900
+        },
+        {
+          "proveMs": 3900,
+          "peakKiB": 171496,
+          "verifyMs": 860
+        }
+      ]
+    },
+    "64": {
+      "size": 64,
+      "results": [
+        {
+          "proveMs": 6210,
+          "peakKiB": 464740,
+          "verifyMs": 260
+        },
+        {
+          "proveMs": 6170,
+          "peakKiB": 464712,
+          "verifyMs": 270
+        },
+        {
+          "proveMs": 6070,
+          "peakKiB": 464872,
+          "verifyMs": 250
+        }
+      ]
+    },
+    "256": {
+      "size": 256,
+      "results": [
+        {
+          "proveMs": 18320,
+          "peakKiB": 1626620,
+          "verifyMs": 250
+        },
+        {
+          "proveMs": 20050,
+          "peakKiB": 1626380,
+          "verifyMs": 210
+        },
+        {
+          "proveMs": 20370,
+          "peakKiB": 1626440,
+          "verifyMs": 330
+        }
+      ]
+    }
+  },
+  "plonk": {
+    "16": {
+      "size": 16,
+      "witnessMs": 1150.2338,
+      "results": [
+        {
+          "proveMs": 749069.6177,
+          "verifyMs": 53.06709999998566,
+          "peakKiB": 1231148
+        },
+        {
+          "proveMs": 363355.37450000003,
+          "verifyMs": 103.05869999999413,
+          "peakKiB": 1237984
+        },
+        {
+          "proveMs": 352426.5624,
+          "verifyMs": 97.16539999999804,
+          "peakKiB": 1229264
+        }
+      ]
+    },
+    "64": {
+      "size": 64,
+      "witnessMs": 895.6774,
+      "results": [
+        {
+          "deadlineMs": 60000,
+          "status": "timeout"
+        },
+        {
+          "deadlineMs": 60000,
+          "status": "timeout"
+        },
+        {
+          "deadlineMs": 60000,
+          "status": "timeout"
+        }
+      ]
+    }
+  }
+}

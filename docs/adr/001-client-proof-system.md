@@ -33,3 +33,24 @@ Un échec impose la révision de cet ADR avant de continuer.
 Cérémonies Groth16 multiples, calcul payé par le client et demandes asynchrones.
 Les garanties de complétude d’ADR-004 peuvent augmenter le nombre de blocs ;
 le budget par bloc ne constitue pas un budget par requête de 10 000 lignes.
+
+## Décision après mesures du 25 novembre 2026
+
+L’agent utilise Groth16 natif avec des blocs de 64. Sur le portable de
+référence, la preuve médiane prend 2,29 s, la vérification 0,215 s et le
+prouveur atteint 145 Mio de RSS. Le repli snarkjs sous Node satisfait aussi
+les trois seuils à cette taille. Garder 16 pour les petits lots et réserver
+256 aux demandes explicites. La preuve WASM de 256 lignes a dépassé quatre
+minutes sur un des essais. UltraHonk vérifie les trois tailles et reste un
+candidat pour un futur profil versionné. L’usage dans le navigateur demande
+des mesures sur les appareils visés.
+
+Pour le comparatif complémentaire Circom/PLONK, arrêter avant la preuve si
+une seule allocation nécessaire dépasse le budget client. Le circuit N=256
+converti par snarkjs comporte 1 517 398 contraintes et 19 signaux publics.
+Son domaine de taille 2²¹ impose 4,75 Gio pour le seul tableau de Lagrange.
+La taille 256 est donc éliminée pour cet adaptateur. Le rapport distingue
+cette borne calculée des pics RSS effectivement mesurés.
+
+Les tailles, les versions, la méthode et les observations figurent dans le
+[rapport des mesures](../benchmarks.md).

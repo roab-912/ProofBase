@@ -2,7 +2,7 @@
 
 | ADR                                 | Décision                                               | État                                      |
 | ----------------------------------- | ------------------------------------------------------ | ----------------------------------------- |
-| [001](001-client-proof-system.md)   | Circom/Groth16, preuve client                          | Adopté pour le spike ; benchmark requis   |
+| [001](001-client-proof-system.md)   | Circom/Groth16, preuve client                          | Groth16 natif, blocs de 64 en Phase 1     |
 | [002](002-networks-finality.md)     | Deux réseaux, finalité et relais explicites            | Adopté                                    |
 | [003](003-encryption-vault.md)      | Chiffrement client et frontière des clés               | Adopté                                    |
 | [004](004-protocol-completeness.md) | Encodage et complétude conservatrice                   | Adopté pour V1 ; tests Phase 1 requis     |

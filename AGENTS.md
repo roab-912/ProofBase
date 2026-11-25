@@ -40,7 +40,9 @@ Les signatures opérationnelles passent par un signataire externe en production.
 - Tests d’abord pour crypto, circuits, contrats ; vecteurs partagés TS/Circom.
 - Aucun secret réel dans Git ; aucun déploiement mainnet ; aucune cérémonie
   de développement utilisable en production.
-- Ne pas implémenter les phases ultérieures dans cette PR de fondation.
+- Enchaîner les développements d’une même phase jusqu’à ses critères
+  d’acceptation. Remettre au propriétaire les commandes Git de publication
+  en fin de phase. Conserver le périmètre de la PR.
 
 ## Commandes
 
@@ -61,6 +63,10 @@ pnpm infra:down
 scanner zéro clair. Aucun de ces tests ne prétend vérifier une preuve ZK.
 `pnpm format` reformate ; `pnpm lint` contrôle format, JavaScript et frontières ;
 `pnpm typecheck` contrôle TypeScript strict ; `pnpm build` compile les 8 espaces.
+
+Pour la Phase 1, exécuter également `pnpm test:circuit` et le parcours de
+preuve chiffré de [docs/phase-1.md](docs/phase-1.md). Conserver les témoins
+temporaires, paramètres de développement et clés hors des artefacts CI.
 
 ## Conventions
 

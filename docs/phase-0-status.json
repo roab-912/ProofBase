@@ -4,8 +4,8 @@
   "specifications": {
     "status": "reviewed",
     "reviewer": "Codex",
-    "reviewedOn": "2026-11-24",
-    "sourceDigest": "3f308994c847329a950665ec3ab1fbc921e91091b332b086910654792015d800"
+    "reviewedOn": "2026-11-25",
+    "sourceDigest": "e51b500ecafb9d053ccca1a5cbe91bea8daf70f4c239e1b07f4a4c33c6a9ad65"
   },
   "remoteCi": {
     "status": "passed",

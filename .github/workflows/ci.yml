@@ -1,4 +1,4 @@
-name: Phase 0
+name: ProofBase
 on:
   push:
     branches: [main, 'phase/**']
@@ -7,12 +7,12 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: phase0-${{ github.ref }}
+  group: proofbase-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   quality:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -29,6 +29,20 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
+      - name: Check encrypted threshold proof and circuit constraints
+        env:
+          PTAU: ${{ runner.temp }}/ppot_0080_16.ptau
+          CIRCOM: ${{ runner.temp }}/circom
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 https://github.com/iden3/circom/releases/download/v2.2.3/circom-linux-amd64 -o "$CIRCOM"
+          echo "85342c7ff332d948df7c0c50ecf201e6129349aef550ce873f3c811b79fe53a3  $CIRCOM" | sha256sum -c -
+          chmod +x "$CIRCOM"
+          curl -fsSL --retry 3 https://pse-trusted-setup-ppot.s3.eu-central-1.amazonaws.com/pot28_0080/ppot_0080_16.ptau -o "$PTAU"
+          echo "ed3622a7c79b0b49aadd134ebbc5b77df8c8c59bccebdfd0d9bf2c1a51561cf9  $PTAU" | sha256sum -c -
+          PATH="$RUNNER_TEMP:$PATH" pnpm test:circuit
+          node tools/spike/prepare.mjs groth16 16
+          node tools/spike/run.mjs 16
   integration:
     runs-on: ubuntu-24.04
     timeout-minutes: 12

@@ -212,6 +212,24 @@
       "name": "docker/compose",
       "version": "v5.8.0",
       "source": "https://github.com/docker/compose/releases/tag/v5.8.0"
+    },
+    {
+      "name": "noir-lang/noir",
+      "version": "v1.0.0",
+      "source": "https://github.com/noir-lang/noir/releases/tag/v1.0.0",
+      "checkedOn": "2026-11-25"
+    },
+    {
+      "name": "AztecProtocol/aztec-packages",
+      "version": "v6.1.0",
+      "source": "https://github.com/AztecProtocol/aztec-packages/releases/tag/v6.1.0",
+      "checkedOn": "2026-11-25"
+    },
+    {
+      "name": "noir-lang/poseidon",
+      "version": "v0.4.0",
+      "source": "https://github.com/noir-lang/poseidon/releases/tag/v0.4.0",
+      "checkedOn": "2026-11-25"
     }
   ],
   "actions": [

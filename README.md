@@ -1,8 +1,9 @@
 # ProofBase
 
 Base de données vérifiable, chiffrée côté client, avec ancrage L2 et checkpoints
-L1. Ce dépôt contient la **Phase 0 uniquement** : espaces TypeScript compilables,
-CI, infrastructure locale et spécifications. Aucun service métier ne tourne encore.
+L1. Le spike de Phase 1 chiffre les lignes chez le client, produit une preuve
+`threshold_max` et la vérifie à partir de données publiques.
+[Reproduire le spike](docs/phase-1.md) · [Mesures des prouveurs](docs/benchmarks.md).
 
 ## Démarrer
 

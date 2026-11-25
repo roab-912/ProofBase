@@ -86,13 +86,13 @@ function decode(
 
 /** Private openings only. The circuit must authenticate positions and enforce scope independently. */
 export async function prepareThresholdOpenings<R extends Material>(
-  block: { start: number; count: number },
+  block: { start: number; count: number; size?: 16 | 64 | 256 },
   rows: readonly R[],
   query: Scope,
   schema: { version: string; columns: readonly Column[] },
   ports: OpeningPorts<R>,
 ) {
-  const { start, count } = block;
+  const { start, count, size = 16 } = block;
   if (
     !Number.isInteger(count) ||
     count < 1 ||
@@ -100,8 +100,9 @@ export async function prepareThresholdOpenings<R extends Material>(
     !Number.isInteger(start) ||
     start < 0 ||
     start >= count ||
-    start % 16 !== 0 ||
-    rows.length !== Math.min(16, count - start)
+    ![16, 64, 256].includes(size) ||
+    start % size !== 0 ||
+    rows.length !== Math.min(size, count - start)
   )
     throw new Error('invalid_block');
   if (
@@ -117,8 +118,8 @@ export async function prepareThresholdOpenings<R extends Material>(
     schema.columns[query.column]?.type === 'bool'
   )
     throw new Error('invalid_threshold');
-  const columns = Array.from({ length: 16 }, empty);
-  const salts = Array<bigint>(16).fill(0n);
+  const columns = Array.from({ length: size }, empty);
+  const salts = Array<bigint>(size).fill(0n);
   let inScopeCount = 0;
   for (const [i, row] of rows.entries()) {
     if (

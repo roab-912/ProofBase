@@ -1,12 +1,16 @@
 import type {
   ArtifactRef,
   ProofEnvelope,
+  ProofVerifier,
   ProtocolProfile,
 } from '@proofbase/core';
 
 /** Client-only capabilities. Witness representation remains engine-specific. */
-export interface ProofSystem<Witness, CompiledCircuit, ProvingKey> {
-  readonly id: string;
+export interface ProofSystem<
+  Witness,
+  CompiledCircuit,
+  ProvingKey,
+> extends ProofVerifier {
   compile(
     source: Uint8Array,
     profile: ProtocolProfile,
@@ -25,3 +29,4 @@ export interface ProofSystem<Witness, CompiledCircuit, ProvingKey> {
   }): Promise<ProofEnvelope>;
 }
 export { prepareThresholdOpenings } from './threshold-openings.js';
+export { proveBlock, type BlockProver } from './block-proof.js';
