@@ -1,3 +1,5 @@
+export { encodeColumn, type ScalarColumn } from './encoding.js';
+
 /** Secret-bearing contracts live only in this client package. */
 export interface EncryptionPort<KeyHandle> {
   readonly id: string;
